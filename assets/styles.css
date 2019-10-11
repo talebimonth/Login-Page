@@ -12,8 +12,8 @@ body {
   background-size: cover;
 }
 
-background img {
-  object-fit: contain;
+img {
+  height: 100%;
 }
 
 h4 {
@@ -53,12 +53,7 @@ form {
   box-shadow: -8px 3px 12px 12px rgba(45,156,38,0.73);
   }
 
-  form:hover {
-    transition: all 100ms ease-in;
-    cursor: pointer;
-  }
-
-.submit {
+ .submit {
    box-shadow: 4px 0px 8px 15px rgba(45,156,38,0.88);
    border-radius: 10px;
    border-color: #2D9C26;
@@ -115,26 +110,22 @@ button:hover {
     color: white;
     }
 
+@media screen and (max-width: 992px) {
+  form {
+      width: 50%
+  }
+}
+
 @media screen and (max-width:767px) {
   form {
-      display: inline;
+      width: 75%;
   }
 
- .submit {
-   display: inline-block;
- }
+}
 
- .forget {
-   font-size: 12px;
- }
-
- img {
-  background-image: 200%;
-  object-fit: contain;
- }
-
- h4 {
-   align-content: center;
-   margin: 0 100px;
- }
+@media screen and (max-width:761px) {
+  form {
+      width: 80%;
   }
+
+}
