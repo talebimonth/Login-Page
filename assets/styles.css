@@ -1,3 +1,5 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +7,81 @@
   outline: none;
 }
 
+body {
+  background: url(./Images/login_bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+background img {
+  object-fit: contain;
+}
+
+h4 {
+  border-bottom: 1px solid white;
+  border-width: 50%;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#email {
+  border-color: #2D9C26;
+}
+
+#password {
+  border-color: #2D9C26;
+}
+
 .input_group {
   width: 100%;
   margin: 20px 0;
+  display: flex;
+  color: white;
+}
+
+input {
+  background: none;
+  border-bottom: 2px solid #2D9C26;
+  overflow: hidden;
+  color: white;
 }
 
 form {
   width: 30%;
   margin: 10vh auto 0 auto;
+  position: relative;
   padding: 40px 60px;
-  box-shadow: 0 0 1px 2px red;
+  box-shadow: -8px 3px 12px 12px rgba(45,156,38,0.73);
+  }
+
+  form:hover {
+    transition: all 100ms ease-in;
+    cursor: pointer;
+  }
+
+.submit {
+   box-shadow: 4px 0px 8px 15px rgba(45,156,38,0.88);
+   border-radius: 10px;
+   border-color: #2D9C26;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+
+form h4 {
+  border-bottom: 2px solid #2D9C26;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  display: inline-block;
+  align-items: center;
 }
 
 label {
   text-transform: uppercase;
   margin-bottom: 2px;
+}
+
+.forget {
+  color: white;
+  cursor: pointer;
 }
 
 input {
@@ -28,7 +90,7 @@ input {
   border: 0px;
   border-bottom: 2px solid black;
   font-size: 20px;
-  padding: 0 10px;
+  padding: 0 25px;
 }
 
 button {
@@ -48,5 +110,29 @@ button:hover {
 
 .text-center {
     text-align: center;
+    color: white;
+    }
 
-}
+@media screen and (max-width:767px) {
+  form {
+      display: inline;
+  }
+
+ .submit {
+   display: inline-block;
+ }
+
+ .forget {
+   font-size: 12px;
+ }
+
+ img {
+  background-image: 200%;
+  object-fit: contain;
+ }
+
+ h4 {
+   align-content: center;
+   margin: 0 100px;
+ }
+  }

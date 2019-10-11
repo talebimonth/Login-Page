@@ -9,18 +9,19 @@
   </head>
   <body>
     <form action="">
-        <h4 class="text-center">LOGIN</h4>
-      <div class="input_group">
-        <label for="email">Email</label>
+        <h4 class="text-center">login</h4>
+      <div class="input_group user">
+        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
         <input
           id="email"
           name="email"
           type="email"
-          placeholder="Example@email.com"
+          placeholder="Username"
         />
       </div>
-      <div class="input_group">
-        <label for="">Password</label>
+      <div class="input_group lock">
+        <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+        
         <input
           id="password"
           name="password"
@@ -29,8 +30,10 @@
         />
       </div>
       <div>
-      <button class="input_group">Submit</button>
+      <button class="input_group submit">Submit</button>
       </div>
+      <span class="forget"><a href="#"></a>Forget password</span> <br>
+      <span class="forget"><a href="#"></a>Don't have an Account Yet?</span>
     </form>
     
   </body>
