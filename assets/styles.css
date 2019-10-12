@@ -90,6 +90,10 @@ input {
   padding: 0 25px;
 }
 
+.d-flex {
+  display: flex;
+}
+
 button {
   width: 100%;
   height: 45px;
@@ -130,7 +134,7 @@ button:hover {
   }
 
   body {
-    height: 100%;
+    height: 100vh;
   }
 
 }
